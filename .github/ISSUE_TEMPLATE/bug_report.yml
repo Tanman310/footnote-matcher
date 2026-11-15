@@ -1,0 +1,46 @@
+name: Bug report
+description: Something isn't working as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please don't include private documents. Make a copy with placeholder text instead.
+        For security problems, see SECURITY.md instead of opening an issue.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+      placeholder: |
+        1. Put the cursor in a footnote formatted in Georgia 9pt
+        2. Chose Extensions → Footnote Matcher → Match all footnotes to selection
+        3. Expected all footnotes to be Georgia 9pt, but…
+    validations:
+      required: true
+  - type: input
+    id: doc-link
+    attributes:
+      label: Example document (optional)
+      description: A link to a Google Doc that shows the problem, shared as "Anyone with the link can view."
+  - type: textarea
+    id: error
+    attributes:
+      label: Error message (if any)
+      description: Copy the text of any alert Footnote Matcher showed.
+      render: text
+  - type: dropdown
+    id: install
+    attributes:
+      label: How are you running Footnote Matcher?
+      options:
+        - Installed from the Google Workspace Marketplace
+        - Test deployment (development)
+        - Script pasted into a document (Extensions → Apps Script)
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: e.g. Chrome 131 on macOS

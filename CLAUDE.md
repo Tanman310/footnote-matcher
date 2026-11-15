@@ -23,6 +23,10 @@ src/                  ← everything here is pushed to Apps Script by clasp
   Code.js             ← add-on code (to be written)
 reference/
   original-code.gs    ← original Footnote Style source (MIT). Reference only. Never push or deploy it.
+test/
+  footnote-matcher-test-100.docx ← 100-footnote test document (import into Google Docs)
+.github/              ← issue and pull request templates
+CONTRIBUTING.md       ← contributor setup, scope, conventions (keep in sync with this file)
 docs/
   SPEC.md             ← behavior spec and acceptance checklist
 .clasp.json.example   ← template; the real .clasp.json is gitignored

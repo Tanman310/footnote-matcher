@@ -1,0 +1,27 @@
+name: Feature request
+description: Suggest an improvement. Please read the scope note first.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Footnote Matcher deliberately does one thing: copy one footnote's formatting to all footnotes. Small improvements to that are very welcome. Larger additions may be declined to keep the add-on simple and easy to trust. See CONTRIBUTING.md.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe what's hard or impossible today, not just the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to happen?
+    validations:
+      required: true
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contributing
+      options:
+        - label: I'd be willing to open a pull request for this.
