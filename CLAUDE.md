@@ -62,3 +62,7 @@ npx @google/clasp open-script  # open the project in the browser (clasp 3.x)
 - Small, focused commits with clear messages.
 - Work on a branch and open a pull request for anything beyond a trivial fix.
 - Update `README.md` when user-facing behavior changes.
+
+## Project text is neutral
+
+Everything committed to the repository or posted on GitHub is written for all readers: documentation, code comments, commit messages, issues, and pull request descriptions. Don't address the maintainer in it. That means no to-do notes, reminders, "before merging, do X" lines, or other messages aimed at him. Put anything he needs to do or decide in the session or chat instead.
