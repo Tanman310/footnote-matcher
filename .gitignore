@@ -1,0 +1,11 @@
+# clasp: per-developer project link and credentials
+.clasp.json
+.clasprc.json
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

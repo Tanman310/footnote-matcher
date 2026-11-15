@@ -11,7 +11,7 @@ A free, open-source Google Docs add-on that makes all your footnotes look the sa
 3. Go to **Extensions → Footnote Matcher → Match all footnotes to selection**.
 4. When you add more footnotes later, use **Extensions → Footnote Matcher → Re-apply footnote style**.
 
-Bold, italics, underline, strikethrough, and links are **never** changed, so italicized titles and linked citations inside your footnotes stay as they are.
+Bold, italics, underline, strikethrough, and links are **never** changed, so italicized titles and linked citations inside your footnotes stay as they are. Links also keep their own color.
 
 ## Privacy
 
