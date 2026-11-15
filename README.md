@@ -13,6 +13,8 @@ A free, open-source Google Docs add-on that makes all your footnotes look the sa
 
 Bold, italics, underline, strikethrough, and links are **never** changed, so italicized titles and linked citations inside your footnotes stay as they are. Links also keep their own color.
 
+
+Highlight color is copied too. If the footnote you match from has no highlight, highlights are removed from all footnotes.
 ## Privacy
 
 Footnote Matcher only works on the document you have open. It doesn't send your data anywhere and doesn't collect analytics. The saved style lives in the document itself.
