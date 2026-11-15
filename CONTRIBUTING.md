@@ -4,6 +4,12 @@ Thanks for your interest in helping. Footnote Matcher is a small, volunteer-main
 
 By taking part, you agree to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
+## Response times
+
+Footnote Matcher is maintained by one volunteer in their spare time. Issues and pull requests usually get a first response within **two weeks**. If yours hasn't had a reply after that, feel free to add a comment to bump it. Security reports are handled faster; see [SECURITY.md](SECURITY.md).
+
+New to open source? Issues labeled [`good first issue`](https://github.com/Tanman310/footnote-matcher/labels/good%20first%20issue) are small, well-described tasks that make a good starting point.
+
 ## Scope
 
 Footnote Matcher does **one thing**: copy the formatting of one piece of text and apply it to every footnote in a Google Doc. The behavior is defined in [`docs/SPEC.md`](docs/SPEC.md).
