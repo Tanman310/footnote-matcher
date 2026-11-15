@@ -347,7 +347,7 @@ function applyAndReport_(doc, style, noFootnotesNote) {
  *     and how many paragraphs could not be fully updated.
  */
 function applyStyleToFootnotes_(doc, style) {
-  const footnotes = doc.getFootnotes() || [];
+  const footnotes = allFootnotes_(doc);
   let failed = 0;
 
   for (const footnote of footnotes) {
@@ -415,4 +415,25 @@ function setColorExceptLinks_(text, color) {
     if (end < start) continue;
     if (!text.getLinkUrl(start)) text.setForegroundColor(start, end, color);
   }
+}
+
+/**
+ * Collects the footnotes from every tab of the document, including nested
+ * tabs. Document.getFootnotes() alone only covers the tab you are in.
+ * @param {DocumentApp.Document} doc The active document.
+ * @return {DocumentApp.Footnote[]} All footnotes, tab by tab.
+ */
+function allFootnotes_(doc) {
+  if (typeof doc.getTabs !== 'function') return doc.getFootnotes() || [];
+  const footnotes = [];
+  const visit = (tabs) => {
+    for (const tab of tabs) {
+      if (tab.getType() === DocumentApp.TabType.DOCUMENT_TAB) {
+        footnotes.push(...(tab.asDocumentTab().getFootnotes() || []));
+      }
+      visit(tab.getChildTabs());
+    }
+  };
+  visit(doc.getTabs());
+  return footnotes;
 }

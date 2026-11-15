@@ -51,6 +51,7 @@ A text attribute that comes back `null` at the source character is *inherited* (
 - **Selection made of whole elements** (not partial) → use the first element; it may be a `Paragraph` or `ListItem` with no text child.
 - **Document has no footnotes** → alert ("No footnotes found"), but still save the style.
 - **Footnote paragraphs that are list items** → apply the same attributes.
+- **Document with multiple tabs** (including nested tabs) → footnotes in every tab are styled, not just the tab the cursor is in.
 
 ## Scope and permissions
 
@@ -84,4 +85,5 @@ A text attribute that comes back `null` at the source character is *inherited* (
 - [ ] Run Re-apply in a fresh doc with no saved style → helpful alert.
 - [ ] Run Match with nothing selected and the cursor outside the document body → helpful alert, no error.
 - [ ] Run in a document with zero footnotes → helpful alert.
+- [ ] In a document with two tabs that both have footnotes, run Match from one tab → footnotes in both tabs match.
 - [ ] Works with 100+ footnotes in reasonable time (under ~30 seconds).
