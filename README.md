@@ -21,9 +21,15 @@ Footnote Matcher only works on the document you have open. It doesn't send your 
 
 A focused rewrite of [Footnote Style](https://github.com/davidrthorn/footnote-style) by David Thorn, used under the MIT License.
 
-## Contributing / development
+## Contributing
 
-See [`docs/SPEC.md`](docs/SPEC.md) for the behavior spec and [`CLAUDE.md`](CLAUDE.md) for development setup (Google Apps Script + [clasp](https://github.com/google/clasp)).
+Bug reports, testing, and pull requests are welcome. To get started:
+
+- **Found a bug or have an idea?** [Open an issue](https://github.com/Tanman310/footnote-matcher/issues/new/choose).
+- **Want to contribute code?** Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup (Google Apps Script + [clasp](https://github.com/google/clasp)), testing, and scope. The behavior spec is in [`docs/SPEC.md`](docs/SPEC.md).
+- **Found a security problem?** Report it privately as described in [SECURITY.md](SECURITY.md).
+
+Everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License
 
