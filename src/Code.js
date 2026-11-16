@@ -114,7 +114,7 @@ function runWithFriendlyErrors_(action) {
     const ui = DocumentApp.getUi();
     ui.alert(
       'Footnote Matcher ran into a problem',
-      'Nothing else was changed. Please try again.\n\nDetails: ' + (err && err.message ? err.message : err),
+      'Some footnotes may already have been updated. You can run the command again, or use Edit → Undo to revert.\n\nDetails: ' + (err && err.message ? err.message : err),
       ui.ButtonSet.OK
     );
   }
